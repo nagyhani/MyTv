@@ -3,12 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 
 export default function SearchBar() {
   const searchParams = useSearchParams();
   const queryParam = searchParams.get("query") || ""; 
-  const pageParam = Number(searchParams.get("page")) || 1;
+
 
   const [query, setQuery] = useState(queryParam);
   const [media, setMedia] = useState<"movie" | "tv" | "person">("movie");

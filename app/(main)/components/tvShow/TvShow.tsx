@@ -88,7 +88,7 @@ export default function TvShow() {
       <TabsTrigger
         value="on_the_air"
         className="
-          rounded-3xl px-6 sm:px-1 py-2 text-black
+          rounded-3xl md:px-6 px-2.5 py-2 text-black
           hover:bg-blue-950 hover:text-yellow-400 
           data-[state=active]:bg-blue-950 data-[state=active]:text-yellow-400
           flex-1 sm:flex-none

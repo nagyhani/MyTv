@@ -4,6 +4,8 @@ import "./globals.css";
 import { HeroUIProvider } from "@heroui/system";
 import NavBar from "./(main)/components/NavBar/NavBar";
 import Footer from "./(main)/components/Footer/Footer";
+import { SidebarProvider } from "@/components/ui/sidebar";
+
 
 
 const geistSans = Geist({
@@ -29,16 +31,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <HeroUIProvider>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+          
+
+              <HeroUIProvider>
           <NavBar/>
-        <div className="pt-[60px]">
+        <div className="pt-16">
             {children}
+          
 
         </div>
         <Footer/>
         </HeroUIProvider>
+
+
+         
+      
       </body>
     </html>
   );

@@ -20,11 +20,13 @@ export default function Page() {
   
   
 
-  let [details , setDetails] = useState<Details>()
+  const [details , setDetails] = useState<Details>()
 
-  let [credits , setCredits] = useState<Credits>()
+  const [credits , setCredits] = useState<Credits>()
 
-  let [trailer , setTrailer] = useState<Trailers>()
+  const [trailer , setTrailer] = useState<Trailers>()
+
+  const country = "US"
  
 async function getCredits(){
 
@@ -192,7 +194,7 @@ setDetails(data)
 
 <div className="flex font-bold gap-2  my-1 md:my-0 md:text-xl">
   {details?.genres?.map(g => (
-    <Link key={g.id} href={`/Genre/${category}/${g.id}`}>
+    <Link key={g.id} href={`/Genre/${category}/${g.id}/${country}`}>
       <h1 className="cursor-pointer hover:underline ">
         {g.name}
       </h1>

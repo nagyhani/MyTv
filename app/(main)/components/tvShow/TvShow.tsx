@@ -116,7 +116,7 @@ export default function TvShow() {
 
         <div className='relative'>
 
-         <Link href = {`/movie/${ele.id}`}>
+         <Link href = {`/tv/${ele.id}`}>
            <Card className='p-0'>
         <CardContent className="relative w-full aspect-2/3 overflow-hidden p-0">
           <Image

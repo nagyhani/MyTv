@@ -105,31 +105,31 @@ export default function Navbar() {
                 </Link>
 
                 {link.name === "Movies" || link.name === "TV Shows" ? (
-                  <Link href={`/sorting/${category}/topRated`}>
+                  <Link href={`/sorting/${category}/${link.topRated}`}>
                     <MenubarItem>Top rated</MenubarItem>
                   </Link>
                 ) : null}
 
                 {link.name === "Movies" ? (
-                  <Link href={"/"}>
+                  <Link href={`/sorting/${category}/${link.nowPlaying}`}>
                     <MenubarItem>Now playing</MenubarItem>
                   </Link>
                 ) : null}
 
                 {link.name === "Movies" ? (
-                  <Link href={"/"}>
+                  <Link href={`/sorting/${category}/${link.upcoming}`}>
                     <MenubarItem>Upcoming</MenubarItem>
                   </Link>
                 ) : null}
 
                 {link.name === "TV Shows" ? (
-                  <Link href={"/"}>
+                  <Link href={`/sorting/${category}/${link.airingToday}`}>
                     <MenubarItem>Airing today</MenubarItem>
                   </Link>
                 ) : null}
 
                 {link.name === "TV Shows" ? (
-                  <Link href={"/"}>
+                  <Link href={`/sorting/${category}/${link.onTheAir}`}>
                     <MenubarItem>On tv</MenubarItem>
                   </Link>
                 ) : null}

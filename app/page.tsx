@@ -12,7 +12,7 @@ export default function Home() {
   return <div>
     <Suspense>
 
-      <BackGround/>
+    <BackGround/>
     <SearchBar/>
     <Trending/>
     <MovieListss/>

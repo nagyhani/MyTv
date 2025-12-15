@@ -91,7 +91,7 @@ export function SideBar({ category, genreId }: SideBarProps) {
      
       <SidebarTrigger
         className={`
-          fixed top-20 left-4 z-50 transition-all duration-300 cursor-pointer
+          fixed top-20 left-4 z-20 transition-all duration-300 cursor-pointer
           ${open ? "translate-x-64" : "translate-x-0"}
         `}
       />

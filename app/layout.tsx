@@ -37,7 +37,7 @@ export default function RootLayout({
 
               <HeroUIProvider>
           <NavBar/>
-        <div className="pt-16">
+        <div className="pt-14">
             {children}
           
 
